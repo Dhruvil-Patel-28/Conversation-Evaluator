@@ -164,6 +164,21 @@ streamlit run app.py
 
 ---
 
+## Running with Docker (Dockerized Baseline)
+
+Docker support is fully provided in the codebase via the [Dockerfile](file:///c:/Users/HP/Desktop/Dhruvil/Resume%20Project/Ahoum/AI%20Assignment/Dockerfile) and [docker-compose.yml](file:///c:/Users/HP/Desktop/Dhruvil/Resume%20Project/Ahoum/AI%20Assignment/docker-compose.yml). 
+
+To run using Docker:
+```bash
+docker compose up --build
+```
+This automatically preprocesses the facets and exposes the Streamlit dashboard on port `8501`.
+
+> [!IMPORTANT]
+> **Docker Verification Note:** While full Docker support has been coded and verified structurally (including a corresponding [.dockerignore](file:///c:/Users/HP/Desktop/Dhruvil/Resume%20Project/Ahoum/AI%20Assignment/.dockerignore)), local container runtime execution verification is currently pending due to a local WSL (Windows Subsystem for Linux) configuration issue on the development host.
+
+---
+
 ## How to Deploy on Streamlit Cloud
 
 1. **Push** your repo to GitHub
