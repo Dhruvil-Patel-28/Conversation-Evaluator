@@ -15,6 +15,8 @@ Each facet receives:
 
 https://conversation-evaluator.streamlit.app/
 
+⚠️ Note: Evaluation is performed using the Groq API and may take a few seconds to complete. Please wait for the results to load after submitting a conversation.
+
 ---
 
 ## Architecture
