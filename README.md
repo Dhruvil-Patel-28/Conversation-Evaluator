@@ -13,7 +13,7 @@ Each facet receives:
 
 ## Live Demo
 
-[Click here to try the app](your-streamlit-url-here)
+https://conversation-evaluator.streamlit.app/
 
 ---
 
