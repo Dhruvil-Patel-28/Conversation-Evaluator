@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  evaluator-ui:
+    build: .
+    container_name: conversation-evaluator
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    restart: unless-stopped
