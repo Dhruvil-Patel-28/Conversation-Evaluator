@@ -194,7 +194,8 @@ This automatically preprocesses the facets and exposes the Streamlit dashboard o
 ```
 conversation-evaluator/
 ├── data/
-│   └── Facets_Assignment.csv        # Raw facets (provided)
+│   ├── Facets_Assignment.csv        # Raw facets (provided)
+│   └── facets_cleaned.csv           # Enriched facets (generated)
 ├── src/
 │   ├── __init__.py
 │   ├── preprocess.py                # Clean, classify, flag facets
@@ -202,10 +203,17 @@ conversation-evaluator/
 │   ├── evaluator.py                 # LLM scoring via Groq
 │   └── pipeline.py                  # Orchestrate & format results
 ├── samples/
-│   └── generate_samples.py          # 50 sample conversations
+│   ├── generate_samples.py          # 50 sample conversations
+│   ├── generate_samples_fast.py     # Fast high-fidelity scoring script
+│   ├── conversations_with_scores.json # 50 conversations & scores
+│   ├── scores_summary.csv           # Tabular summaries of scores
+│   └── conversations_with_scores.zip # Packaged scores deliverable
 ├── app.py                           # Streamlit web interface
 ├── requirements.txt                 # Python dependencies
 ├── .env.example                     # Environment variable template
+├── Dockerfile                       # Container definition for app
+├── docker-compose.yml               # Multi-container baseline setup
+├── .dockerignore                    # Optimization block for image builds
 └── README.md                        # This file
 ```
 ## Scaling to 5000 Facets
