@@ -1,0 +1,6 @@
+groq
+streamlit
+pandas
+numpy
+python-dotenv
+tqdm
