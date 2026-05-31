@@ -234,8 +234,6 @@ without any architectural changes.
 1000 facets → 50 batches  → ~10 mins  
 5000 facets → 250 batches → ~45 mins
 
-## Scaling to 5000 Facets
-
 ### Code Architecture ✅
 Zero redesign needed. The batch loop handles any number
 of facets identically.
